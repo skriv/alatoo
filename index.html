@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alatoo Logo</title>
+    <link rel="stylesheet" href="logo.css" />
+</head>
+
+<body>
+
+    <div class="controls">
+        <button id="themeToggle" aria-label="Toggle theme">
+            Theme
+        </button>
+
+        <button id="textToggle" aria-label="Toggle logo text">
+            Text
+        </button>
+
+        <select id="sizeSelect" aria-label="Select logo size">
+            <option value="small">Small</option>
+            <option value="medium" selected>Medium</option>
+            <option value="large">Large</option>
+            <option value="xlarge">XLarge</option>
+        </select>
+    </div>
+
+    <main>
+        <!-- Logo Web Component -->
+        <alatoo-logo id="logo" size="medium" show-text></alatoo-logo>
+    </main>
+
+    <script src="logo-component.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
